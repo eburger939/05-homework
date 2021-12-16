@@ -1,13 +1,30 @@
 //variables for the date
-var currentDay = $('#currentDay');
-var todaysDate = moment().format("")
+var currentDay = document.querySelector('#currentDay');
 
 //variables for text are
-var textArea = $('.form-control');
-var nine = $("#9");
-var ten = $("#10");
-var eleven = $("#11");
-var twelve = $("#12");
-var thirteen = $("#13");
-var fourteen = $("#14");
-var fifteen = $("#15");
+var textArea = document.querySelector('.form-control');
+var nine = document.querySelector('#nine');
+var ten = document.querySelector('#ten');
+var eleven = document.querySelector('#eleven');
+var twelve = document.querySelector('#twelve');
+var thirteen = document.querySelector('#thirteen');
+var fourteen = document.querySelector('#fourteen');
+var fifteen = document.querySelector('#fifteen');
+var sixteen = document.querySelector('#sixteen');
+var seventeen = document.querySelector('#seventeen');
+
+
+
+var saveBtn = document.querySelector('.saveBtn');
+
+
+function displayTime() {
+    var currentTime = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
+    currentDay.text(currentTime);
+}
+  
+
+setInterval (displayTime, 1000);
+
+saveBtn.addEventListener("click", function() {
+}
