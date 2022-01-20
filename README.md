@@ -10,4 +10,4 @@
 ![screenshot](05-homework.png)
 
 ## Link to deployed application
-* https://eburger939.github.io/05-homework/
+* https://eburger939.github.io/day-planner/
